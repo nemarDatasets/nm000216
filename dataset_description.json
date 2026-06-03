@@ -1,45 +1,47 @@
 {
-	"Name": "P300 dataset BI2015a from a \"Brain Invaders\" experiment",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "CC-BY-4.0",
-	"Authors": [
-		"Louis Korczowski",
-		"Martine Cederhout",
-		"Anton Andreev",
-		"Gr\u00e9goire Cattan",
-		"Pedro Luiz Coelho Rodrigues",
-		"Violette Gautheret",
-		"Marco Congedo"
-	],
-	"HowToAcknowledge": "Korczowski, L., Cederhout, M., Andreev, A., Cattan, G., Rodrigues, P.L.C., Gautheret, V., Congedo, M. (2019). Brain Invaders calibration-less P300-based BCI with modulation of flash duration Dataset (bi2015a). Technical Report, GIPSA-lab.",
-	"EthicsApprovals": [
-		"Ethical Committee of the University of Grenoble Alpes (Comit\u00e9 d'Ethique pour la Recherche Non-Interventionnelle)"
-	],
-	"ReferencesAndLinks": [
-		"https://doi.org/10.5281/zenodo.3266930",
-		"hal-02172347"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.5.0"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "https://doi.org/10.5281/zenodo.3266929",
-			"URL": "https://doi.org/10.5281/zenodo.3266930"
-		}
-	],
-	"Keywords": [
-		"Electroencephalography (EEG)",
-		"P300",
-		"Brain-Computer Interface",
-		"Experiment"
-	],
-	"PublicationYear": 2019
+  "Name": "P300 dataset BI2015a from a \"Brain Invaders\" experiment",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Louis Korczowski",
+    "Martine Cederhout",
+    "Anton Andreev",
+    "Grégoire Cattan",
+    "Pedro Luiz Coelho Rodrigues",
+    "Violette Gautheret",
+    "Marco Congedo"
+  ],
+  "HowToAcknowledge": "Korczowski, L., Cederhout, M., Andreev, A., Cattan, G., Rodrigues, P.L.C., Gautheret, V., Congedo, M. (2019). Brain Invaders calibration-less P300-based BCI with modulation of flash duration Dataset (bi2015a). Technical Report, GIPSA-lab.",
+  "EthicsApprovals": [
+    "Ethical Committee of the University of Grenoble Alpes (Comité d'Ethique pour la Recherche Non-Interventionnelle)"
+  ],
+  "ReferencesAndLinks": [
+    "https://doi.org/10.5281/zenodo.3266930",
+    "hal-02172347"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.5.0"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "https://doi.org/10.5281/zenodo.3266929",
+      "URL": "https://doi.org/10.5281/zenodo.3266930"
+    }
+  ],
+  "Keywords": [
+    "Electroencephalography (EEG)",
+    "P300",
+    "Brain-Computer Interface",
+    "Experiment"
+  ],
+  "PublicationYear": 2019,
+  "DatasetDOI": "10.82901/nemar.nm000216",
+  "Version": "1.0.0"
 }
