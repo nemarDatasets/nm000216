@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "P300 dataset BI2015a from a \"Brain Invaders\" experiment",
-  "description": "This dataset comprises electroencephalographic recordings from 43 healthy subjects performing a visual P300-based brain-computer interface task using the Brain Invaders videogame paradigm. Participants responded to an oddball stimulus presentation (36-symbol grid with 1 target, 35 non-targets) across three sessions with varying flash durations (110ms, 80ms, 50ms). EEG data were acquired using 32 wet electrodes at 512 Hz and processed with a calibration-free adaptive Riemannian classifier for real-time feedback. Resting state recordings (eyes closed) were acquired before and after sessions.",
-  "methods_description": "EEG recordings were acquired using 32 active wet electrodes (g.GAMMAcap, g.tec) at 512 Hz sampling rate with right earlobe reference and Fz ground. The oddball paradigm presented pseudo-randomly flashed symbol groups on a 36-symbol grid. Three game sessions (9 levels each) employed different flash durations (110ms, 80ms, 50ms). Real-time classification used an adaptive Riemannian Minimum Distance to Mean (RMDM) classifier. Resting state recordings (eyes closed) were acquired before and after sessions. Data were collected using OpenViBE software with synchronized USB tagging to minimize jitter.",
+  "description": "This dataset comprises electroencephalographic recordings from 43 healthy participants performing a visual P300-based brain-computer interface task using the Brain Invaders videogame paradigm. Participants completed three sessions with varying flash durations (50ms, 80ms, 110ms) while attempting to identify target symbols among 36 pseudo-randomly flashed stimuli. EEG data were acquired using 32 wet electrodes at 512 Hz, with real-time adaptive Riemannian classification providing online feedback without calibration. Resting state recordings (eyes closed, approximately one minute) were acquired before and after each session.",
+  "methods_description": "EEG data were recorded from 43 healthy subjects (mean age 23.7±3.19 years; 31 male, 12 female) using 32 active wet electrodes in a 10-10 montage (g.GAMMAcap, g.tec) sampled at 512 Hz with g.USBamp hardware and OpenViBE software. The experiment employed an oddball paradigm with visual stimuli presented on a grid of 36 symbols (1 target, 35 non-targets) flashed pseudo-randomly at three flash durations across three game sessions. Reference electrode was placed at the right earlobe with ground at Fz. Resting state recordings (eyes closed, approximately one minute) were acquired before and after each session. Real-time adaptive Riemannian Minimum Distance to Mean classification provided visual feedback through the game interface.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -44,22 +44,24 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "oddball paradigm"
-    },
-    {
-      "term": "Event-Related Potentials, P300",
+      "term": "Event-related potentials",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D034951"
     },
     {
-      "term": "visual stimulation"
+      "term": "Oddball paradigm"
     },
     {
-      "term": "Riemannian classification"
+      "term": "Visual attention"
     },
     {
-      "term": "calibration-free BCI"
+      "term": "Riemannian geometry"
+    },
+    {
+      "term": "Brain Invaders"
+    },
+    {
+      "term": "Calibration-free"
     }
   ],
   "related_identifiers": [
@@ -111,5 +113,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "f7c2628e2742e5ffdc1060c9a56f23abcc2f440ca480c83162bf9e3732de28f2"
+  "source_hash": "3d187d71cfefc8681a8ff1f0bd8bfcb0c3fab6ca0b19a42fff846a8c59e9ffb9"
 }
