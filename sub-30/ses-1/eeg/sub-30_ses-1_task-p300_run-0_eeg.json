@@ -19,7 +19,9 @@
 	"CapManufacturer": "g.tec",
 	"CapManufacturersModelName": "g.GAMMAcap",
 	"HardwareFilters": {
-		"HardwareFilter": "no digital filter applied"
+		"HardwareFilter": {
+			"Description": "no digital filter applied"
+		}
 	},
 	"TaskDescription": "[target detection] calibration-less P300-based BCI with modulation of flash duration; three game sessions (9 levels each) with different flash durations (110ms, 80ms, 50ms); resting state and eyes closed recorded before and after sessions; subjects instructed to limit eye blinks, head movements and face muscular contractions",
 	"Instructions": "destroy target symbol within 8 attempts; aliens move slowly and regularly according to predefined path to maintain attention",
