@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "P300 dataset BI2015a from a \"Brain Invaders\" experiment",
-  "description": "This dataset comprises electroencephalographic recordings from 43 healthy participants performing a visual P300-based brain-computer interface task using the Brain Invaders videogame paradigm. Participants completed three sessions with varying flash durations (50ms, 80ms, 110ms) while attempting to identify target symbols among 36 pseudo-randomly flashed stimuli. EEG data were acquired using 32 wet electrodes at 512 Hz, with real-time adaptive Riemannian classification providing online feedback without calibration. Resting state recordings (eyes closed, approximately one minute) were acquired before and after each session.",
-  "methods_description": "EEG data were recorded from 43 healthy subjects (mean age 23.7±3.19 years; 31 male, 12 female) using 32 active wet electrodes in a 10-10 montage (g.GAMMAcap, g.tec) sampled at 512 Hz with g.USBamp hardware and OpenViBE software. The experiment employed an oddball paradigm with visual stimuli presented on a grid of 36 symbols (1 target, 35 non-targets) flashed pseudo-randomly at three flash durations across three game sessions. Reference electrode was placed at the right earlobe with ground at Fz. Resting state recordings (eyes closed, approximately one minute) were acquired before and after each session. Real-time adaptive Riemannian Minimum Distance to Mean classification provided visual feedback through the game interface.",
+  "description": "This dataset comprises electroencephalographic recordings from 43 healthy subjects performing a visual P300-based brain-computer interface task using the Brain Invaders videogame paradigm. The experiment took place at GIPSA-lab, Grenoble, France, in 2015. Participants responded to an oddball stimulus presentation (36-symbol grid with 1 target, 35 non-targets) across three sessions with varying flash durations (50ms, 80ms, 110ms). EEG data were acquired using 32 wet electrodes at 512 Hz and processed with a calibration-free adaptive Riemannian classifier for real-time feedback. Resting state recordings (eyes closed, approximately one minute) were acquired before and after each session.",
+  "methods_description": "EEG recordings were acquired using 32 active wet electrodes (g.tec g.GAMMAcap, 10-10 montage) at 512 Hz sampling rate with reference at right earlobe and ground at Fz. The oddball paradigm presented pseudo-randomly flashed symbol groups on a 36-symbol grid. Each session consisted of 9 levels with 12 repetitions per level. Real-time classification used an adaptive Riemannian Minimum Distance to Mean (RMDM) classifier. Resting state recordings (eyes closed) were acquired before and after each session. Data were collected using OpenViBE software with g.USBamp hardware.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -39,29 +39,25 @@
       "term": "P300"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "Event-related potentials",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D034951"
+      "term": "Brain-Computer Interface"
     },
     {
       "term": "Oddball paradigm"
     },
     {
-      "term": "Visual attention"
+      "term": "Event-related potentials"
     },
     {
-      "term": "Riemannian geometry"
+      "term": "Visual stimulation"
     },
     {
-      "term": "Brain Invaders"
+      "term": "Riemannian classification"
     },
     {
-      "term": "Calibration-free"
+      "term": "Calibration-free BCI"
+    },
+    {
+      "term": "Flash duration modulation"
     }
   ],
   "related_identifiers": [
@@ -113,5 +109,13 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "3d187d71cfefc8681a8ff1f0bd8bfcb0c3fab6ca0b19a42fff846a8c59e9ffb9"
+  "funding_references": [
+    {
+      "funder_name": "CNRS"
+    },
+    {
+      "funder_name": "University Grenoble-Alpes"
+    }
+  ],
+  "source_hash": "30d9563db0071a91e61bdd694472b4b83cf37e329a36686fad6281b83f7eb2e9"
 }
