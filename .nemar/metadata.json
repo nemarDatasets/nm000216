@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "P300 dataset BI2015a from a \"Brain Invaders\" experiment",
-  "description": "This dataset comprises electroencephalographic recordings from 43 healthy subjects performing a visual P300-based brain-computer interface task using the Brain Invaders videogame paradigm. The experiment took place at GIPSA-lab, Grenoble, France, in 2015. Participants responded to an oddball stimulus presentation (36-symbol grid with 1 target, 35 non-targets) across three sessions with varying flash durations (50ms, 80ms, 110ms). EEG data were acquired using 32 wet electrodes at 512 Hz and processed with a calibration-free adaptive Riemannian classifier for real-time feedback. Resting state recordings (eyes closed, approximately one minute) were acquired before and after each session.",
-  "methods_description": "EEG recordings were acquired using 32 active wet electrodes (g.tec g.GAMMAcap, 10-10 montage) at 512 Hz sampling rate with reference at right earlobe and ground at Fz. The oddball paradigm presented pseudo-randomly flashed symbol groups on a 36-symbol grid. Each session consisted of 9 levels with 12 repetitions per level. Real-time classification used an adaptive Riemannian Minimum Distance to Mean (RMDM) classifier. Resting state recordings (eyes closed) were acquired before and after each session. Data were collected using OpenViBE software with g.USBamp hardware.",
+  "description": "EEG recordings from 43 healthy participants playing Brain Invaders, a visual P300 brain-computer interface game based on an oddball paradigm with a grid of 36 symbols. The study examined how flash duration (50, 80 or 110 ms) affects a calibration-less P300 BCI that uses wet electrodes and an adaptive Riemannian classifier. Data were recorded with 32 channels at 512 Hz over three game sessions per subject, with resting-state and eyes-closed recordings before and after.",
+  "methods_description": "32 active wet electrodes (g.USBamp, g.tec; 10-10 montage) recorded at 512 Hz with the reference on the right earlobe and ground at Fz. Stimulation and acquisition ran in OpenViBE with USB-synchronized tagging. Each participant played three game sessions of nine levels, one session per flash duration. A real-time adaptive Riemannian Minimum Distance to Mean classifier provided calibration-free online feedback. About one minute of resting state and eyes-closed EEG was recorded before and after the sessions.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -36,35 +36,31 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
       "term": "P300"
     },
     {
-      "term": "Brain-Computer Interface"
+      "term": "event-related potentials"
     },
     {
-      "term": "Oddball paradigm"
-    },
-    {
-      "term": "Event-related potentials"
-    },
-    {
-      "term": "Visual stimulation"
+      "term": "oddball paradigm"
     },
     {
       "term": "Riemannian classification"
     },
     {
-      "term": "Calibration-free BCI"
-    },
-    {
-      "term": "Flash duration modulation"
+      "term": "video game"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.5281/zenodo.3266930",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDerivedFrom"
     },
     {
       "identifier": "https://github.com/nemarDatasets/nm000216",
@@ -92,13 +88,21 @@
       "relation_type": "IsDescribedBy"
     }
   ],
+  "funding_references": [
+    {
+      "funder_name": "CNRS"
+    },
+    {
+      "funder_name": "University Grenoble-Alpes"
+    }
+  ],
   "resource_type_general": "Dataset",
   "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
   "sizes": [
-    "6.6 GB (259 files)"
+    "6.18 GB (259 files)"
   ],
   "formats": [
     ".bdf",
@@ -108,14 +112,6 @@
     ".tsv",
     ".yaml",
     ".yml"
-  ],
-  "funding_references": [
-    {
-      "funder_name": "CNRS"
-    },
-    {
-      "funder_name": "University Grenoble-Alpes"
-    }
   ],
   "source_hash": "30d9563db0071a91e61bdd694472b4b83cf37e329a36686fad6281b83f7eb2e9"
 }
