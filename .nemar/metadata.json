@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "P300 dataset BI2015a from a \"Brain Invaders\" experiment",
-  "description": "EEG recordings from 43 healthy participants playing Brain Invaders, a visual P300 brain-computer interface game based on an oddball paradigm with a grid of 36 symbols. The study examined how flash duration (50, 80 or 110 ms) affects a calibration-less P300 BCI that uses wet electrodes and an adaptive Riemannian classifier. Data were recorded with 32 channels at 512 Hz over three game sessions per subject, with resting-state and eyes-closed recordings before and after.",
-  "methods_description": "32 active wet electrodes (g.USBamp, g.tec; 10-10 montage) recorded at 512 Hz with the reference on the right earlobe and ground at Fz. Stimulation and acquisition ran in OpenViBE with USB-synchronized tagging. Each participant played three game sessions of nine levels, one session per flash duration. A real-time adaptive Riemannian Minimum Distance to Mean classifier provided calibration-free online feedback. About one minute of resting state and eyes-closed EEG was recorded before and after the sessions.",
+  "description": "EEG recordings from 43 healthy participants playing Brain Invaders, a visual P300 brain-computer interface game based on an oddball paradigm with a grid of 36 symbols. Data were acquired with 32 wet electrodes across three sessions with flash durations of 50, 80 and 110 ms, to study the influence of flash duration on a calibration-less P300 BCI using an adaptive Riemannian classifier. Resting-state and eyes-closed recordings were also collected before and after the game sessions at GIPSA-lab, Grenoble.",
+  "methods_description": "Participants played three game sessions of nine levels each with different flash durations (110, 80, 50 ms). EEG was recorded at 512 Hz from 32 wet Ag/AgCl electrodes (g.USBamp, g.tec; 10-10 montage; reference right earlobe, ground Fz) using OpenViBE with USB-synchronized tagging. A real-time adaptive Riemannian Minimum Distance to Mean classifier assessed commands without calibration. About one minute of resting state and eyes-closed data were recorded before and after the sessions.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -36,24 +36,21 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
+      "term": "P300"
+    },
+    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "P300"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
       "term": "oddball paradigm"
     },
     {
-      "term": "Riemannian classification"
+      "term": "Riemannian classifier"
     },
     {
-      "term": "video game"
+      "term": "visual evoked potentials"
     }
   ],
   "related_identifiers": [
@@ -113,5 +110,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "30d9563db0071a91e61bdd694472b4b83cf37e329a36686fad6281b83f7eb2e9"
+  "source_hash": "674ea056ccce1c8a1bcb1da7790e808fb66a32934f26f85f8522bf613dbf0419"
 }
